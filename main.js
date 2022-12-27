@@ -25,7 +25,17 @@ picker.addEventListener('change', (e)=> {
         }
     };
 
-    // console.log(data)
+    // sort according to there names
+    data.sort(function (a, b) {
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
+
     // create table
     const tableData = data.map(value => {
     return (
@@ -52,5 +62,5 @@ picker.addEventListener('change', (e)=> {
     listing.innerHTML = tableData;
 });
 
-// let datas = [{name: 'shipping_detail', size: 3253, type: 'text/xml'},{name: 'frequency_config', size: 1252, type: 'text/xml'},{name: 'sale_approval', size: 2918, type: 'text/xml'},{name: 'sale_order_views', size: 15797, type: 'text/xml'}]
+
 
