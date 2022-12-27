@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Loader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>File Loader</h1>
+    <div>
+        
+        <div>
+            <span class="btn">
+                <label for="picker" >
+                    Choose Folder
+                </label>
+            </span>
+            <input type="file" id="picker" name="fileList" style="visibility:hidden;" webkitdirectory multiple >
+        </div>
+        
+
+        <table class="picker">
+            <thead>
+                <tr>
+                    <td>File name</td>
+                    <td>File Size</td>
+                    <td>Info</td>
+                </tr>
+            </thead>
+            <tbody id="listing" >
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
