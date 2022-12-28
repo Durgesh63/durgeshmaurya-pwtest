@@ -27,10 +27,10 @@ picker.addEventListener('change', (e)=> {
 
     // sort according to there names
     data.sort(function (a, b) {
-        if (a.name.toLowerCase() < b.name.toLowerCase()) {
+        if (a.name.split('.').pop().toLowerCase() < b.name.split('.').pop().toLowerCase()) {
           return -1;
         }
-        if (a.name.toLowerCase() > b.name.toLowerCase()) {
+        if (a.name.split('.').pop().toLowerCase() > b.name.split('.').pop().toLowerCase()) {
           return 1;
         }
         return 0;
