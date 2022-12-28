@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>File Loader</h1>
-    <div>
-        
+    <div class="header-top">
+        <div class="header-inside" style="border-bottom-left-radius: 20px;">6388876932 </div>
+        <div  class="header-inside">durgeshmaurya0998@gmail.com </div>
+    </div>
+    <nav class="navs">
+        <a href="index.html" class="navs-main">
+            <h1> File Loader </h1></a>
+
         <div>
+        <a href="index.html" class="navs-items active">Home</a>
+        <a href="about.html" class="navs-items non-active">About</a>
+        </div>
+    </nav>
+
+    <div>
+        <div class="body-item">
             <span class="btn">
                 <label for="picker" >
                     Choose Folder
@@ -20,8 +32,7 @@
             <input type="file" id="picker" name="fileList" style="visibility:hidden;" webkitdirectory multiple >
         </div>
         
-
-        <table class="picker">
+        <table id="tables">
             <thead>
                 <tr>
                     <td>File name</td>
@@ -29,11 +40,8 @@
                     <td>Info</td>
                 </tr>
             </thead>
-            <tbody id="listing" >
-
-            </tbody>
+            <tbody id="listing"> </tbody>
         </table>
-
     </div>
 
     <script src="main.js"></script>
